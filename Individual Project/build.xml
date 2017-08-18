@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<project name="Individual Project" basedir="."
+
+default="Individual Project">
+
+<target name="Individual Project">
+
+<mkdir dir="bin" />
+
+<javac srcdir="src" destdir="bin" includeantruntime="false"/>
+<echo message="**** This is BankServer ****" />
+<echo message="**** To run BankClient follow following steps ****" />
+<echo message="1. Go to src/edu/umb/cs/cs681 to find ant script for BankClient" />
+<echo message="2. Open new terminal and run ant script for BankClient at above path" />
+<echo message="3. Repeate step 2 to run multiple clients " />
+
+<java fork="true" failonerror="yes" dir="bin" className="edu/umb/cs/cs681/BankServer" />
+
+</target>
+ </project>

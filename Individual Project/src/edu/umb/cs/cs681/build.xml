@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<project name="Individual Project" basedir="."
+
+default="Individual Project">
+
+<target name="Individual Project">
+
+<mkdir dir="bin" />
+
+<javac srcdir="Client" destdir="bin" includeantruntime="false"/>
+<echo message="**** This is BankClient ****" />
+
+<java fork="true" failonerror="yes" dir="bin" className="BankClient" />
+
+</target>
+ </project>
