@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<project name="hw7" basedir="."
+
+default="hw7">
+
+<target name="hw7">
+
+<mkdir dir="bin" />
+
+<javac srcdir="src" destdir="bin" includeantruntime="false"/>
+
+<java fork="true" failonerror="yes" dir="bin" className="edu/umb/cs/cs681/HelloWorldTest2" />
+
+</target>
+ </project>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<project name="hw10" basedir="."
+
+default="hw10">
+
+<target name="hw10">
+
+<mkdir dir="bin" />
+
+<javac srcdir="src" destdir="bin" includeantruntime="false"/>
+
+<java fork="true" failonerror="yes" dir="bin" className="edu/umb/cs/cs681/MCTest" >
+<arg value="10000000000"/>
+<arg value="1"/>
+<arg value="10000000000"/>
+<arg value="2"/>
+</java>
+</target>
+ </project>

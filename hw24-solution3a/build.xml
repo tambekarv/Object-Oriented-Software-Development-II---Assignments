@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<project name="hw24-solution3a" basedir="."
+
+default="hw24-solution3a">
+
+<target name="hw24-solution3a">
+
+<mkdir dir="bin" />
+
+<javac srcdir="src" destdir="bin" includeantruntime="false"/>
+
+<java fork="true" failonerror="yes" dir="bin" className="edu/umb/cs/cs681/ThreadSafeBankAccount2" />
+
+</target>
+ </project>

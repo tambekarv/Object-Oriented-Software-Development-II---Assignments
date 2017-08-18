@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<project name="hw30" basedir="."
+
+default="hw30">
+
+<target name="hw30">
+
+<mkdir dir="bin" />
+
+<javac srcdir="client" destdir="bin" includeantruntime="false"/>
+<echo message="**** This is BankClient ****" />
+
+<java fork="true" failonerror="yes" dir="bin" className="BankClient" />
+
+</target>
+ </project>

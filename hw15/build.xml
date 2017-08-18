@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<project name="hw15" basedir="."
+
+default="hw15">
+
+<target name="hw15">
+
+<mkdir dir="bin" />
+
+<javac srcdir="src" destdir="bin" includeantruntime="false"/>
+
+<java fork="true" failonerror="yes" dir="bin" className="edu/umb/cs/cs681/ClientPrimeNumberGenerator" />
+
+</target>
+ </project>

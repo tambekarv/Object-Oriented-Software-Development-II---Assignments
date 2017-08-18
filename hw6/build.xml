@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<project name="hw6" basedir="."
+
+default="hw6">
+
+<target name="hw6">
+
+<mkdir dir="bin" />
+
+<javac srcdir="src" destdir="bin" includeantruntime="false"/>
+
+<java fork="true" failonerror="yes" dir="bin" className="edu/umb/cs/cs681/Client" />
+
+</target>
+ </project>

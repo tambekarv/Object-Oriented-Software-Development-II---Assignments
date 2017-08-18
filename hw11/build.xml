@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<project name="hw11" basedir="."
+
+default="hw11">
+
+<target name="hw11">
+
+<mkdir dir="bin" />
+
+<javac srcdir="src" destdir="bin" includeantruntime="false"/>
+
+<java fork="true" failonerror="yes" dir="bin" className="edu/umb/cs/cs681/ClientPrimeNumberGenerator" />
+
+</target>
+ </project>
